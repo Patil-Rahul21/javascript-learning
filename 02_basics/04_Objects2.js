@@ -52,10 +52,48 @@ const Users = [
 ]
  
 Users[1].email
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('rollNo'));
+// console.log(tinderUser.hasOwnProperty('rollNo'));
 
+
+const course = {
+    coursename: "JS in hindi",
+    price: "9999",
+    courseInstructor : "Hitesh"
+}
+// course.courseInstructor
+
+const  {courseInstructor:Instructor} = course  // {} to create de-structure in react
+
+// console.log(courseInstructor);
+
+console.log(Instructor);
+
+
+//JSON Syntax.
+// {
+//     "Name": "Rahul",
+//     "Std_id":"210",
+//     "course": "BCA"
+// }
+
+// {
+//   "array": [
+//     1,
+//     2,
+//     3
+//   ],
+//   "boolean": true,
+//   "color": "gold",
+//   "null": null,
+//   "number": 123,
+//   "object": {
+//     "a": "b",
+//     "c": "d"
+//   },
+//   "string": "Hello World"
+// }
