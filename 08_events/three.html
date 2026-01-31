@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #212121; color: aliceblue;">
+    <h1>I'am Bandya</h1>
+    <button id="start"> START </button>
+    <button id="stop"> STOP </button>
+</body>
+<script>
+
+document.getElementById('start').addEventListener('click',function(){
+
+    const Repeat_set = function(){
+        console.log("Rahul", Date.now())
+    }
+    // setInterval(Repeat_set, 1000)
+
+    document.getElementById('stop').addEventListener('click',function(){
+
+    const stop = setTimeout(Repeat_set,1000)
+     console.log("Stopped");
+    clearTimeout(stop)
+   
+    
+})
+})
+
+
+</script>
+</html>
