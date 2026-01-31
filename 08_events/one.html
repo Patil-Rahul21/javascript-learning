@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Events</title>
+</head>
+
+<body style="background-color: black; color:aliceblue;">
+        <div>
+                <ul id="images">IMG
+                        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVBmvQ0vWIbzrOhkQyUhU-iQ2M2NYbm9lnzg&s"
+                                        alt="Animal" id="Tiger"></li>
+                        <li><img src="https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg" alt="Elephant"
+                                        height="200px;" width="277px"></li>
+                        <li><img src="https://tinypng.com/images/social/website.jpg" alt="" id="Panda" height="200px;"
+                                        width="277px"></li>
+                        <li><img src="https://www.shutterstock.com/image-photo/powerful-male-lion-stands-proudly-260nw-2630721775.jpg"
+                                        id="King" alt="Lion" height="200px;" width="277px"></li>
+                        <li><img src="https://images.pexels.com/photos/5789356/pexels-photo-5789356.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                        alt="" height="200px;" width="277px"></li>
+                        <li><img src="https://t4.ftcdn.net/jpg/02/83/83/93/360_F_283839302_yt6JIsE96Pj4PydFDcBNKDUnuSpYB9h0.jpg"
+                                        alt="" height="200px;" width="277px"></li>
+                        <li> <a id="google" style="background-color: aqua; color: brown; font-size: 30px;"
+                                        href="https://google.com">Google</a> </li>
+
+                </ul>
+        </div>
+</body>
+
+<!-- // attachEvent()
+   //jQuery
+   // type, timestamp, defaultPrevented
+   //target, toElement, srcElement, currentTarget,
+   //clientX, clientY, screenX, screenY
+   // altKey, ctrKey, shiftKey, keyCode -->
+
+<script>
+        // document.getElementById('images').addEventListener ('click', function(e){
+        //     console.log("clicked inside the ul");
+
+        // }, false) 
+
+        // document.getElementById('King').addEventListener ('click', function(e){
+        //     console.log("clicked King")
+        //     e.stopPropagation();
+        // },false) 
+
+        // document.getElementById('google').addEventListener('click', function(e){
+        // e.preventDefault();
+        // e.stopPropagation();
+        // console.log("Google Clicked");
+
+        // },false)
+
+        document.querySelector('#images').addEventListener('click', function (e) {
+                console.log(e.target.tagName);
+                if (e.target.tagName === 'IMG') {
+                        console.log(e.target.id);
+
+                        let removeIt = e.target.parentNode
+                        removeIt.remove()
+                }
+                
+        })
+//  removeIt.parentNodeNNN.removeChild(removeIt)
+</script>
+
+</html>
